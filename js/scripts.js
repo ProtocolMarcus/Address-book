@@ -1,4 +1,4 @@
-//business logic
+// business logic
 function Contact(first, last) {
   this.firstName = first;
   this.lastName = last;
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     var newContact = new Contact(inputtedFirstName, inputtedLastName);
 
-    $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName "</span></li>");
+    $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + "</span></li>");
 
     $("input#new-first-name").val("");
     $("input#new-last-name").val("");
